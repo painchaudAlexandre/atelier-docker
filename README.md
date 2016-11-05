@@ -1,11 +1,11 @@
 #slide first
-docker pull php:5.6
-docker run -it php:5.6 bash
+docker pull php:5.6  
+docker run -it php:5.6 bash  
 
 # slide linking
-docker pull mysql/mysql-server:5.6
-docker run -p 3306:3306 --name cmysql -e MYSQL_ROOT_PASSWORD=root -d mysql/mysql-server:5.6
-docker run -tid --name cphp --link cmysql php:5.6”
+docker pull mysql/mysql-server:5.6  
+docker run -p 3306:3306 --name cmysql -e MYSQL_ROOT_PASSWORD=root -d mysql/mysql-server:5.6  
+docker run -tid --name cphp --link cmysql php:5.6  
 
 #Useful links
 
